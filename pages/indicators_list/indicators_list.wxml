@@ -1,0 +1,11 @@
+<view class="indicators_list">
+  <tabs-item tabs="{{tabs}}" binditemTap="modify">
+    <!-- <block wx:if="{{tabs[0].isActive}}">0</block>
+    <block wx:elif="{{tabs[1].isActive}}">1</block>
+    <block wx:elif="{{tabs[2].isActive}}">2</block>
+    <block wx:elif="{{tabs[3].isActive}}">3</block> -->
+  </tabs-item>
+</view>
+<scroll-view scroll-y style="height: calc(100vh - 86rpx)">
+  <indicators-rank />
+</scroll-view>

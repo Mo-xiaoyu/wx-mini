@@ -1,0 +1,15 @@
+<view class="contentBottom">
+  <swiper class="tab-right" style="background:{{bgColor}};" vertical="true" autoplay="true" circular="true"
+    interval="2000" display-multiple-items="{{newsList.length>5?4:newsList.length}}">
+    <view class="right-item">
+      <block wx:for="{{newsList}}" wx:key="idx">
+        <swiper-item>
+          <navigator class="content-item" hover-class="title_active">
+            <text class="name">{{item.title}}</text>
+            <text class="wawa">{{item.time}}</text>
+          </navigator>
+        </swiper-item>
+      </block>
+    </view>
+  </swiper>
+</view>

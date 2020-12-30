@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "indicators-rank": "../components/indicators_rank/indicatorsRank",
+    "opinion-map": "../components/opinion_map/opinionMap",
+    "opinion-swiper": "../components/opinion_swiper/opinionSwiper"
+  }
+}

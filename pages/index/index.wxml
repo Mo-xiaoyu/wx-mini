@@ -1,0 +1,76 @@
+<view class="container">
+  <view class="section">
+    <view class="section_title">
+      <text class="left_title">全国城市指数排名</text>
+      <navigator hover-class="more_active" url="/pages/indicators_list/indicators_list">
+        更多 >>
+      </navigator>
+    </view>
+    <view class="section_content">
+      <indicators-rank />
+    </view>
+  </view>
+  <view class="section">
+    <view class="section_title">
+      <text class="left_title">我要吐槽</text>
+    </view>
+    <view class="ts_wrap">
+      <view class="ts_text" bindtap="createIssue">企业吐槽</view>
+      <view class="ts_text">个人吐槽</view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section_title">
+      <text class="left_title">舆情地图(使用说明)</text>
+    </view>
+    <view class="map_wrap" catchtouchmove="catchMove">
+      <opinion-map />
+    </view>
+  </view>
+  <view class="section">
+    <view class="section_title">
+      <text class="left_title">问卷调查</text>
+    </view>
+    <view class="question_wrap">
+      <view class="question_text">企业填写</view>
+      <view class="question_text">政府填写</view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section_title">
+      <text class="left_title">热点信息</text>
+    </view>
+    <view class="hotspot_wrap">
+      <view class="hotspot_text">
+        <view style="width:240rpx">最新动态</view>
+      </view>
+      <view class="hotspot_text">
+        <view style="width:240rpx">重点舆情</view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="section">
+    <view class="section_title">
+      <text class="left_title">舆情展示</text>
+    </view>
+    <view class="opinion_wrap">
+      <opinion-swiper newsList="{{newsList}}" />
+    </view>
+  </view> -->
+  <view class="section">
+    <view class="section_title">
+      <text class="left_title">企业品牌</text>
+    </view>
+    <view class="brand_wrap" hover-class="wrap_active">
+      <view class="brand_text">企业品牌宣传</view>
+    </view>
+  </view>
+  <view class="about_us">
+    <view class="dot_div">关于我们</view>
+  </view>
+  <view class="section footers">
+    <view class="footer_title">关于我们</view>
+    <view class="footer_else">联系电话：010-xxxxxxxx</view>
+    <view class="footer_else">邮箱：xxxxx@163.com</view>
+  </view>
+</view>

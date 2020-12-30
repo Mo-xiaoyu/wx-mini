@@ -1,0 +1,151 @@
+.issue_container {
+  margin: 40rpx;
+  background-color: #f1f1f1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+
+.section {
+  display: flex;
+  margin-bottom: 40rpx;
+  padding: 20rpx;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.section_insert {
+  flex: 1;
+  margin-left: 18rpx;
+}
+
+.delete_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn_area {
+  overflow: hidden;
+}
+
+.btn_submit,
+.btn_reset {
+  margin-top: 30rpx;
+}
+
+.btn_reset {
+  color: #fa5151;
+  background-color: rgba(0, 0, 0, .01);
+}
+
+.btn_reset_active {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.upload_input_box {
+  position: relative;
+  margin: 14rpx;
+  /* margin-right: 16rpx;
+  margin-bottom: 16rpx; */
+  width: 192rpx;
+  height: 192rpx;
+  box-sizing: border-box;
+  background-color: #ededed;
+}
+
+.upload_input_box::before,
+.upload_input_box::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #a3a3a3;
+}
+
+.upload_input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.upload_input_box:before {
+  width: 4rpx;
+  height: 64rpx;
+}
+
+.upload_input_box:after {
+  width: 64rpx;
+  height: 4rpx;
+}
+
+.section_attach {
+  border: none;
+  margin: 0;
+  padding: 0 20rpx;
+}
+
+.section_tips {
+  color: #fa5151;
+  font-size: 13px;
+  height: 22px;
+  line-height: 24px;
+}
+
+.attach_wrap {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.attach_img_display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.attach_img {
+  position: relative;
+  width: 192rpx;
+  height: 192rpx;
+  margin: 14rpx;
+}
+
+.picker {
+  flex: 1;
+}
+
+/* 重写radio样式 */
+radio .wx-radio-input {
+  height: 17px;
+  width: 17px;
+  /* margin-top: -4rpx 20rpx 0; */
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: transparent;
+}
+
+/* swtich整体大小 */
+.wx-switch-input {
+  width: 41px !important;
+  height: 21px !important;
+}
+
+/* false的样式 */
+.wx-switch-input::before {
+  width: 41px !important;
+  height: 18px !important;
+  border: 1px solid #ececec;
+}
+
+/* true的样式 */
+.wx-switch-input::after {
+  width: 20px !important;
+  height: 20px !important;
+}

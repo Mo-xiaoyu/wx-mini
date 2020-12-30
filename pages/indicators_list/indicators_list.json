@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "营商环境指数排名",
+  "usingComponents": {
+    "tabs-item": "../components/tabs/tabs",
+    "indicators-rank": "../components/indicators_rank/indicatorsRank"
+  }
+}
